@@ -36,6 +36,10 @@ jobs:
         shell: powershell
         run: |
           choco install ninja
+      - name: Init submodules
+        shell: cmd
+        run: |
+          git submodule update --init --recursive
       - name: Build C Libraries
         shell: powershell
         run: |
