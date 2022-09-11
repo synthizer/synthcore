@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15.0)
 project(synthcore VERSION 0.1.0 LANGUAGES C CXX)
 
-include(ctest)
+include(CTest)
 enable_testing()
 
 find_package(Threads)
